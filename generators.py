@@ -1,4 +1,3 @@
-
 # Is used for create iterations and return a serie of iterable elements
 # are  more slow than list comprehension but it can improve the memory usage
 # is used with yield in functions.
