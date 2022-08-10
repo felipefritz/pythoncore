@@ -7,7 +7,6 @@ class Cards:
         self.types = list('HSCD')
         self.cards = [i for i in range(2, 11)] + list('JQKA')
         self.deck = [(type, card) for type in self.types for card in self.cards]
-        self.shuffled = []
 
     def shuffle_deck(self):
         random.shuffle(self.deck)
