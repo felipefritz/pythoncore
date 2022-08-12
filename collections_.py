@@ -9,7 +9,7 @@ def count_most_common_in_object(object):
     print(count_most_common)
     return count_most_common[0][0]
 
-
+count_most_common_in_object(test_var)
 #namedtuple
 def build_coordinates_object(x: float, y: float):
     Coordinate = namedtuple('Coordinate', 'x,y')

@@ -97,7 +97,9 @@ class Person:
 
     @staticmethod
     def tostring():
-        print('Student Class')
+        # It is possible to access to the class attributes
+        person = Person.name = 'Steve'
+        print('Person Class', person)
 
 
 if __name__ == "__main__":
