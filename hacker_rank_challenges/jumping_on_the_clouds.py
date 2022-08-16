@@ -7,7 +7,8 @@ def jumpingOnClouds(c):
 
         if cloud == 1:
             avoid.append(i)
-        else:
+
+        if i + 2 < len(c) and c[i + 2] == 0:
             jump += 1
 
     print(avoid)
