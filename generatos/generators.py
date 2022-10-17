@@ -9,15 +9,18 @@ def insert_to_db(product):
     print(f'product {product.title} inserted success to the database!' )
 
 
-def get_product():
+def get_products():
     products = requests.get(url='https://dummyjson.com/products').json()['products']
     for producto in products:
         yield producto
-pr = get_product()
 
-print(next(pr))
 
-for product in get_product():
-    Object = namedtuple('product', product)
-    p = Object(**product)
-    insert_to_db(p)
+if __name__ == '__main__':
+    pr = get_products()
+
+    print(next(pr))
+
+    for product in pr:
+        Object = namedtuple('product', product)
+        p = Object(**product)
+        insert_to_db(p)

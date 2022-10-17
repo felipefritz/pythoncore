@@ -86,6 +86,7 @@ class Outside:
         def __init__(self):
             self.name = 'I am inside'
 
+
 # duck typing example
 class Truck:
     def start(self):
@@ -93,6 +94,7 @@ class Truck:
 
     def stop(self):
         print('truck stoping')
+
 
 class Car:
     def start(self):
@@ -111,8 +113,6 @@ class Vehicle:
     def action(self):
         self.vehicle.start()
         self.vehicle.stop()
-
-
 
 
 if __name__ == '__main__':

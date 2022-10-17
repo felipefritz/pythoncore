@@ -1,7 +1,7 @@
-
 from itertools import product, permutations, combinations \
     , combinations_with_replacement, accumulate, groupby
-# product it will combine as a cartesial
+
+# product it will combine as a cartesian
 
 a = [1, 2, 3]
 b = [3, 4]
@@ -27,9 +27,12 @@ print(list(comb_wr))
 acc = accumulate(a)
 print(list(acc))
 
-# groupby  makes an iteratorthat return keys and groups
+# groupby  makes an iterator that return keys and groups
 l = [1, 2, 3, 4]
+
+
 def smaller_than_3(z):
     return z < 3
+
 
 grouped = groupby(a, key=smaller_than_3)

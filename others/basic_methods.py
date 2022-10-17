@@ -1,6 +1,6 @@
 # strings methods that returns boolean
 
-#  string.isalnum() -> if is alphanumeric or not
+# string.isalnum() -> if is alphanumeric or not
 # string .isdigit() -> if is numeric or not
 # string.isalpha() -> only alphanumeric
 # string.islower() -> if is lower
@@ -16,29 +16,3 @@
 # string.title() -> first char in all words to uppercase
 # string.count(value) -> count how many times is the value in string
  # string.find(value) -> return the position number
-
-
-
- # DEAULTDICTS:
-  # si se accede a una llave que no existe,
-  # este retornara siempre algo dependiendo
-  # del tipo de dato que se declaro al iniciarlo
-
-
- # from collections import defaultdict
-# d = defaultdict(float) -> dict with float  values
-
-
-# ORDEREDDICTS:
-    # son diccionarios ordenados
-# from collections import OrderedDict
-
-
-# NAMEDTUPLE:
-# are tuples that can be used as objects
-# are inmutable
- # from collections import namedtuple
-
- # Person = namedtuple('Person' , 'name lastname age')
- # p = Person(name='bob', lastname='test', age=25)
- # p.name -> bob
